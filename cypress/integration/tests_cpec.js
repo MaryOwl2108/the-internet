@@ -1,33 +1,33 @@
-describe('Download Test', () => {
-    beforeEach (() => {
-        cy.visit('http://the-internet.herokuapp.com/upload');
-    })
+// describe('Download Test', () => {
+//     beforeEach (() => {
+//         cy.visit('http://the-internet.herokuapp.com/upload');
+//     })
 
-    it('File uploading with the button', () => {
+//     it('File uploading with the button', () => {
 
-        cy.get('#file-upload')
-            .attachFile('file.png');
-        // cy.get('#drag-drop-upload')
-        //     .attachFile('file.png', { subjectType: 'drag-n-drop' });
-         cy.get('#file-submit').click();
+//         cy.get('#file-upload')
+//             .attachFile('file.png');
+//         // cy.get('#drag-drop-upload')
+//         //     .attachFile('file.png', { subjectType: 'drag-n-drop' });
+//          cy.get('#file-submit').click();
 
-         cy.get('h3').should('contain', 'File Uploaded!');
-    })
+//          cy.get('h3').should('contain', 'File Uploaded!');
+//     })
 
-    it('File uploading with drag-n-drop', () => {
+//     it('File uploading with drag-n-drop', () => {
 
-        cy.get('#file-upload')
-            .attachFile('file.png');
+//         cy.get('#file-upload')
+//             .attachFile('file.png');
 
 
-        cy.get('#drag-drop-upload')
-            .attachFile('file.png', { subjectType: 'drag-n-drop' });
+//         cy.get('#drag-drop-upload')
+//             .attachFile('file.png', { subjectType: 'drag-n-drop' });
 
-         cy.get('#file-submit').click();
+//          cy.get('#file-submit').click();
 
-         cy.get('h3').should('contain', 'File Uploaded!');
-    })
-})
+//          cy.get('h3').should('contain', 'File Uploaded!');
+//     })
+// })
 
   describe('slider test', () => {
     beforeEach (() => {
